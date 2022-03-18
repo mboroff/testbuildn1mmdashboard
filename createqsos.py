@@ -2,8 +2,6 @@ import sqlite3
 
 try:
     sqliteConnection = sqlite3.connect('qsos')
-    sqlite_create_table_query = '''DROP TABLE qsos;'''
-    sqlite_create_table_query = '''DROP TABLE spots;'''
     sqlite_create_table_query = '''CREATE TABLE qsos(
         "app" TEXT,
         "contestname" TEXT,
@@ -54,16 +52,7 @@ try:
   	"lon" TEXT,
   	"isbusted" TEXT,
   	"distance" TEXT
-	);
-    
-
-CREATE TABLE spots(
-    "call" TEXT type UNIQUE,
-  "lat" TEXT,
-  "lon" TEXT,
-  "grid" TEXT
-  );
-CREATE INDEX call_idx on spots(call);'''
+	);'''
 
     cursor = sqliteConnection.cursor()
     print("Successfully Connected to SQLite")
