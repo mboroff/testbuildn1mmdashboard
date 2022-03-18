@@ -7,7 +7,7 @@ Prepare a new raspberry pi image.
 
 Using SSH run raspi-config and activate the VNC Interface and set the VNC display resolution to 1280 x 720.
 
-Reboot the pi. Awhen it boots back up use VNC Viewer to access the Pi.
+Reboot the pi. When it boots back up use VNC Viewer to access the Pi.
 
 To use:
     1) Download the files to /home/pi/Downloads and use file manager properties on the zip file to extracte the files. 
