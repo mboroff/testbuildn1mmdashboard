@@ -39,7 +39,6 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt clean
 clear
 echo " "
 
-sleep 2
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) < y.txt
 sleep 2
 
@@ -61,17 +60,13 @@ echo " "
 echo "Installing sqlite3"
 sudo apt-get install sqlite3
 sleep 2
+rm qsos
 clear
-sleep 2
 
 echo "Creating databases"
-python3 dropqsos.py > pylog.txt
-python3 dropspots.py >> pylog,txt
-python3 createqsos.py  >> pylog.txt
-python3 createspots.py >> pylog.txt
-python3 createindex.py >> pylog.txt
-sleep 10
-
+ 
+python3 createqsos.py
+sleep 3
 clear
 echo " "
 echo "Adding nodes"
