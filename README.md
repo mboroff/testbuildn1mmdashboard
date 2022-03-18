@@ -10,7 +10,7 @@ Using SSH run raspi-config and activate the VNC Interface and set the VNC displa
 Reboot the pi. When it boots back up use VNC Viewer to access the Pi.
 
 To use:
-    1) Download the files to /home/pi/Downloads and use file manager properties on the zip file to extracte the files. 
+    1) Download the files to /home/pi/Downloads and use file manager properties on the zip file to extract the files withe the Archive option. 
        Then move the files to /home/pi. 
     2) change the properties of buildn1mmdashboard.sh to anyone and execute.
     3) run the command ./buildn1mmdashboard.sh and follow the prompts.
