@@ -39,7 +39,7 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt clean
 clear
 echo " "
 
-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) < y.txt
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) < /home/pi/testbuildn1mmdashboard/y.txt
 sleep 2
 
 
