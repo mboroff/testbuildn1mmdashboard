@@ -1,7 +1,7 @@
 # testbuildn1mmdashboard
 
 These files will update the raspberry pi code, add node-red, add sqlite3, build the qsos database, 
-open the editor to settings.js to modify the project option to true. The reboot the Pi.
+open the editor to settings.js to modify the project option to true. When the edit is completed the Pi will reboot.
 
 Prepare a new raspberry pi image.
 
