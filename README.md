@@ -7,7 +7,7 @@ Prepare a new raspberry pi image.
 
 SSH into the Pi and enter this command
 
-git clone https://github.com/mboroff/testbuildn1mmdashboard && sudo chmod +x testbuildn1mmdashboard/buildn1mmdashboard.sh  && ./testbuildn1mmdashboard/buildn1mmdashboard.sh
+git clone https://github.com/mboroff/testbuildn1mmdashboard && sudo chmod +x testbuildn1mmdashboard/buildn1mmdashboard.sh  &&  cd testbuildn1mmdashboard && ./buildn1mmdashboard.sh
 
 Then follow the ptompts.
 
