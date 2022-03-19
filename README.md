@@ -5,12 +5,10 @@ open the editor to settings.js to modify the project option to true. The reboot 
 
 Prepare a new raspberry pi image.
 
-Using SSH run raspi-config and activate the VNC Interface and set the VNC display resolution to 1280 x 720.
+SSH into the Pi and enter this command
 
-Reboot the pi. When it boots back up use VNC Viewer to access the Pi.
+git clone https://github.com/mboroff/testbuildn1mmdashboard && sudo chmod +x testbuildn1mmdashboard/buildn1mmdashboard.sh  && ./testbuildn1mmdashboard/buildn1mmdashboard.sh
 
-To use:
-    1) Download the files to /home/pi/Downloads and use file manager properties on the zip file to extract the files with the Archive option. 
-       Then move the files to /home/pi. 
-    2) change the properties of buildn1mmdashboard.sh to anyone and execute.
-    3) run the command ./buildn1mmdashboard.sh and follow the prompts.
+Then follow the ptompts.
+
+When the Pi rebots access node-red and clone the project.
