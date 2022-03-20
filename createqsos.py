@@ -3,7 +3,9 @@ import sqlite3
 try:
     sqliteConnection = sqlite3.connect('qsos')
     sqlite_create_table_query = '''CREATE TABLE qsos(
-   "app" TEXT,
+  
+
+     "app" TEXT,
   "contestname" TEXT,
   "contestnr" TEXT,
   "timestamp" TEXT,
@@ -51,9 +53,10 @@ try:
   "lat" TEXT,
   "lon" TEXT,
   "isbusted" TEXT,
-  "distance" TEXT);'''
+  "distance" TEXT
   
-  sqlite_create_table_query_radio = '''CREATE TABLE radio(
+);'''
+    sqlite_create_table_query_create_radio = '''CREATE TABLE radio(
   "timestamp" TEXT,
   "app" TEXT,
   "StationName" TEXT,
@@ -77,8 +80,7 @@ try:
   "AuxAntSelected" TEXT,
   "AuxAntSelectedName" TEXT
 );'''
-  
-  
+
     sqlite_create_table_query_create_spots = '''CREATE TABLE spots(
     "call" TEXT type UNIQUE,
   "lat" TEXT,
@@ -90,16 +92,12 @@ try:
 
     cursor = sqliteConnection.cursor()
     print("Successfully Connected to SQLite")
-   
-    print("Creating table QSOS") 
-    cursor.execute(sqlite_create_table_query_create_qsos)
-    
-    print("Creating table radio")
+    print("Creating table QSOS")
+    cursor.execute(sqlite_create_table_query)
+    print("Creaating table radio")
     cursor.execute(sqlite_create_table_query_create_radio)
-    
     print("Creating table SPOTS")
     cursor.execute(sqlite_create_table_query_create_spots)
-    
     print("Creating INDEX")
     cursor.execute(sqlite_create_table_query_create_index)
     sqliteConnection.commit()
