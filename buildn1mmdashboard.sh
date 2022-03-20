@@ -86,7 +86,7 @@ npm install node-red-contrib-ui-led >> npmlog.txt
 npm install node-red-contrib-unit-converter >> npmlog.txt
 npm install node-red-contrib-loop-processing >> npmlog.txt
 npm install node-red-node-geofence >> npmlog.txt
-Nom install node-red-contrib-moment >> nom.txt
+Nom install node-red-contrib-moment >> npmlog.txt
 
 clear
 echo " "
