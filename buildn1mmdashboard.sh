@@ -39,6 +39,8 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt clean
 clear
 echo " "
 sudo apt install build-essential git curl
+echo "Press any key to continue"
+read
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) < /home/pi/testbuildn1mmdashboard/y.txt
 sleep 2
 
