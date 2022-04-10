@@ -42,6 +42,9 @@ sudo apt install build-essential git curl
 echo "Press any key to continue"
 read
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) < /home/pi/testbuildn1mmdashboard/y.txt
+echo "Press any key to continue"
+read
+
 sleep 2
 
 echo "Starting node-red"
