@@ -59,8 +59,7 @@ echo " "
 echo "Installing Git"
 sudo apt-get install git 
 sleep 2
-clear
-echo " "
+
 echo "Installing sqlite3"
 sudo apt-get install sqlite3
 sleep 2
