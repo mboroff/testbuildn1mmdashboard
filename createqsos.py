@@ -82,6 +82,7 @@ try:
 );'''
 
     sqlite_create_table_query_create_spots = '''CREATE TABLE spots(
+    "timestamp" TEXT
     "call" TEXT type UNIQUE,
   "lat" TEXT,
   "lon" TEXT,
