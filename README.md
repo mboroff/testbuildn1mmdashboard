@@ -14,6 +14,9 @@ SSH into the Pi and enter this command (Hint use copy and paste)
 
 git clone https://github.com/mboroff/testbuildn1mmdashboard && sudo chmod +x testbuildn1mmdashboard/buildn1mmdashboard.sh  &&  cd testbuildn1mmdashboard && ./buildn1mmdashboard.sh
 
+
+git clone https://github.com/mboroff/installnodered && sudo chmod +x installnodered/installnodered.sh  &&  cd instllnodered && ./installnodered.sh
+
 Then follow the ptompts.
 
 When the Pi rebots access node-red and clone the project.
