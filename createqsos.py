@@ -2,10 +2,8 @@ import sqlite3
 
 try:
     sqliteConnection = sqlite3.connect('qsos')
-    sqlite_create_table_query = '''CREATE TABLE qsos(
-  
-
-     "app" TEXT,
+    sqlite_create_table_query = '''CREATE TABLE IF NOT EXISTS qsos(
+  "app" TEXT,
   "contestname" TEXT,
   "contestnr" TEXT,
   "timestamp" TEXT,
@@ -54,9 +52,8 @@ try:
   "lon" TEXT,
   "isbusted" TEXT,
   "distance" TEXT
-  
-);'''
-    sqlite_create_table_query_create_radio = '''CREATE TABLE radio(
+);
+CREATE TABLE IF NOT EXISTS radio(
   "timestamp" TEXT,
   "app" TEXT,
   "StationName" TEXT,
@@ -79,15 +76,15 @@ try:
   "RadioName" TEXT,
   "AuxAntSelected" TEXT,
   "AuxAntSelectedName" TEXT
-);'''
-
-    sqlite_create_table_query_create_spots = '''CREATE TABLE spots(
-    "timestamp" TEXT
-    "call" TEXT type UNIQUE,
+);
+CREATE TABLE IF NOT EXISTS spots(
+  "timestamp" TEXT,
+  "call" TEXT type UNIQUE,
   "lat" TEXT,
   "lon" TEXT,
   "grid" TEXT
-);'''
+);
+CREATE INDEX call_idx on spots(call);'''
 
     sqlite_create_table_query_create_index = '''CREATE INDEX call_idx on spots(call);'''
 
